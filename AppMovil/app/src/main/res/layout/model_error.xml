@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/mdl_error_icon"
+        android:layout_width="@dimen/error_icon_size"
+        android:layout_height="@dimen/error_icon_size"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/mdl_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:paddingHorizontal="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mdl_error_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:text="Reitentar"/>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fg_conv_swipe">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/fg_conv_good"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fg_conv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <include
+                android:visibility="visible"
+                android:id="@+id/fg_conv_loading"
+                layout="@layout/model_loading"/>
+
+            <include
+                android:visibility="gone"
+                android:id="@+id/fg_conv_bad"
+                layout="@layout/model_error"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fg_conv_fab"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_add_24"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="@dimen/fg_sell_fab_margin"
+                android:layout_marginRight="@dimen/fg_sell_fab_margin"
+                android:backgroundTint="@color/colorAccent"
+                app:backgroundTint="@color/colorAccent"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

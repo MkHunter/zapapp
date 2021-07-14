@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/publish_det_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Rodbrun"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        app:title="Detalle de Conversacion"
+        android:layout_alignParentTop="true"/>
+
+    <ScrollView
+        android:id="@+id/publish_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/publis_det_write_layout"
+        android:layout_below="@id/publish_det_tool"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/model_publishing"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/publis_det_write_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#e8e8e8"/>
+
+        <LinearLayout
+            android:id="@+id/publish_det_write"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:weightSum="1"
+            android:paddingLeft="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/publis_det_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escribe algo"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0.8"/>
+
+            <ImageButton
+                android:id="@+id/publis_det_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_send_24"
+                android:layout_weight="0.2"
+                android:backgroundTint="@android:color/transparent"
+                android:tint="@color/Whiskey"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

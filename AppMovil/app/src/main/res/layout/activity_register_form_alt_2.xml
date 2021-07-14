@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/Creme_Brulee">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/Cognac"
+                />
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/ic_wave_3"
+                android:backgroundTint="@color/Cognac"
+                android:layout_below="@id/v1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crear una Cuenta"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"/>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="125dp"
+                app:contentPaddingLeft="20dp"
+                app:contentPaddingRight="20dp"
+                app:contentPaddingTop="15dp"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/register_til_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/Rodbrun"
+                        android:layout_marginBottom="10dp"
+                        android:outlineSpotShadowColor="@color/Rodbrun"
+                        android:hint="Nombre"
+                        app:startIconDrawable="@drawable/ic_usuario_24dp"
+                        app:startIconTint="@color/Rodbrun">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textSize="17sp"
+                            android:singleLine="true"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/register_til_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/Rodbrun"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Apellido(s)"
+                        app:startIconDrawable="@drawable/ic_usuario_24dp"
+                        app:startIconTint="@color/Rodbrun">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textSize="17sp"
+                            android:singleLine="true"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/register_til_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/Rodbrun"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Telefono"
+                        android:singleLine="true"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="10"
+                        app:startIconDrawable="@drawable/ic_baseline_phone_24"
+                        app:startIconTint="@color/Rodbrun">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textSize="17sp"
+                            android:singleLine="true"
+                            android:inputType="phone"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/register_til_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/Rodbrun"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Correo"
+                        app:helperTextEnabled="true"
+                        app:helperText="Opcional"
+                        app:startIconDrawable="@drawable/ic_baseline_email_24"
+                        app:startIconTint="@color/Rodbrun">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textSize="17sp"
+                            android:singleLine="true"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/register_til_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/Rodbrun"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Contraseña"
+                        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+                        app:startIconTint="@color/Rodbrun">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textSize="17sp"
+                            android:singleLine="true"
+                            android:inputType="textPassword"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/register_til_pass_conff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/Rodbrun"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Confirmar Contraseña"
+                        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+                        app:startIconTint="@color/Rodbrun">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textSize="17sp"
+                            android:singleLine="true"
+                            android:inputType="textPassword"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+
+        
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/register_btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="95dp"
+            app:cornerRadius="8dp"
+            android:backgroundTint="@color/Rodbrun"
+            android:text="Registrame"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:padding="14dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/dialog_ord_sta_tool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            app:navigationIcon="@drawable/ic_close_48">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DETALLE PEDIDO"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:letterSpacing="0.2"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/dialog_ord_sta_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#16171502 . 10 julio 2020"
+                    android:textColor="@color/gris"
+                    android:textSize="16sp"
+                    android:layout_marginVertical="8dp"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/dialog_ord_sta_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/dialog_ord_sta_status"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/dialog_ord_sta_step_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginVertical="50dp"/>
+
+                    <ImageView
+                        android:id="@+id/dialog_ord_sta_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_accessibility_24"
+                        android:layout_marginHorizontal="15dp"/>
+
+                    <TextView
+                        android:id="@+id/dialog_ord_sta_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="24sp"
+                        android:textAlignment="center"
+                        android:layout_marginVertical="30dp"
+                        android:letterSpacing="0.08"/>
+
+                    <TextView
+                        android:id="@+id/dialog_ord_sta_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/dialog_ord_sta_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="50dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/dialog_ord_sta_loading"
+                    android:visibility="visible"
+                    layout="@layout/model_loading"/>
+
+                <include
+                    android:id="@+id/dialog_ord_sta_response"
+                    android:visibility="gone"
+                    layout="@layout/model_error"/>
+
+            </FrameLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/beige"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/onboard_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/onboard_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingHorizontal="80dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/onboard_btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Iniciar Sesion"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/Rodbrun"
+                app:cornerRadius="100dp"/>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/onboard_btn_singup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrarme"
+                android:backgroundTint="@color/gris_verde"
+                app:cornerRadius="100dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/onboard_dots_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/onboard_btn_skip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Saltar"
+                android:textColor="@color/Cognac"
+                android:background="@android:color/transparent"
+                android:layout_weight="0.35"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="0.3"/>
+            <Button
+                android:id="@+id/onboard_btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Siguiente"
+                android:textColor="@color/Cognac"
+                android:background="@android:color/transparent"
+                android:layout_weight="0.35"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

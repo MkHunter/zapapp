@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dialog_response_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:cardUseCompatPadding="true"
+        android:paddingVertical="10dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="60dp"
+        app:cardElevation="-1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="30dp">
+
+
+
+            <TextView
+                android:id="@+id/dialog_response_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mensaje del response"
+                android:textAlignment="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="50dp"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/dialog_response_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reitentar"
+                android:layout_marginVertical="10dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ImageView
+        android:id="@+id/dialog_response_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_accessibility_24"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+
+</FrameLayout>

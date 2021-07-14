@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Zapapp</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  keys section  -->
+    <string name="SharedPrefKey">zapapp</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <!--  NetWorking Testing  -->
+<!--        <string name="host">http://192.168.1.66:8090/</string>-->
+    <string name="host">http://138.197.198.78:5000/</string>
+    <string name="token_test_FCM">prueba Token</string>
+
+    <string name="resource">api/Login</string>
+    <!--<string name="host">https://jsonplaceholder.typicode.com/</string>
+    <string name="resource">albums</string>-->
+    <string name="token_test">
+        eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJOb21icmUiOiJBbGJlcnRvIExvZXJhIiwiQ29ycmVvIjoiYmV0aWxsb2xvZXJhQGdtYWlsLmNvbSIsIlJvbGUiOiJBZG1pbiIsIm5iZiI6MTYwMzkxODMyOSwiZXhwIjoxNjAzOTE4NDQ5LCJpc3MiOiJodHRwOi8vaHR0cDovL2xvY2FsaG9zdDo1NTg0NC8iLCJhdWQiOiJodHRwOi8vaHR0cDovL2xvY2FsaG9zdDo1NTg0NC86In0.PhmjQFe8uJaqjahW8y8PtgbNXM2-wMvG5dv35gbJv2M
+    </string>
+
+    <string name="image_test">
+        https://lh3.googleusercontent.com/y4uyczXnTCCA5h3rJphg92nYBVqxdPWmK7_OfGWaMnAEs458jpce87ztWbIA9_gvevBYsfam5_7wcT9moYLXohKRuotgLDkvX5Pa1ASpWhfAF-B0QzfDMLXsoXnTAnlatV8zAipgB6Ck6Oys00vOWEXBgi12WWmtF9pgYhkoH4ZrGq0jExpY94yHC2lw6Iepwlqk2SKqOScXv8I57vDWOeHpTIeHJCuAsU_SdGOSkKgSTxm2rijbgdUv27qeK06mwKGqM5bw6urbhKK9vKoWZDfx-OmXYKkOlkQCx4hJRmKRiUegYL95HeJQm1Koy1KsbCm36RQBE8LKNjr8RJ8kHYkVyiOE0Rsmx7ueGEwB4Bouqtwpkl48WapLQHKKWTXzlU3CoqYjMFDR9RF72jbjJAXiNNmKLqlLMZz9tVBFNrcAXTDMXX6iI_McsBNW6aIkD-jRHRbo8JR428tlbwiOrzQ0LVR4ATYyOm9cwJQyKXQDVA9BFYNSSYQ_1xc4rqu-UAnfw1tJf0HlImR1ItslOKFnpxrJU2iwvl_2qT9tbzwvdCcPuTaiRlgJkuFSsitXx4wkb8toYLabXbjIiStv1G9szy3kMh7WV5cuB3Gv-UwD1TzHwk19DR6OowSvKJo2pKG1NJUjF9qerAqFhheAiCV2ohBEWkjJE6KgX0mAzpckaEat7X34C7Nq-zN6d-8=w1080-h767-no?authuser=0
+    </string>
+
+    <!--  Long text for testing  -->
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet eros quis ullamcorper volutpat. Donec faucibus justo non nisi pharetra consequat.
+        Sed ullamcorper, nisl non cursus ultricies, ligula mauris fermentum metus, sed feugiat quam urna vel mi. Nam volutpat justo in elementum volutpat.
+        In arcu lorem, sollicitudin et lorem id, gravida condimentum justo. Integer rutrum quam a lacinia molestie. Maecenas aliquam diam sed ex pharetra dapibus.
+        Aenean id tempor velit. Sed vulputate nisl eros, sed lacinia odio rutrum vitae. Suspendisse erat lorem, malesuada semper augue in, efficitur molestie lorem.
+        Vivamus aliquam, metus eget ultrices condimentum, lorem ligula consequat dolor, at consectetur tortor turpis sed nulla.
+        Fusce finibus sem lectus, volutpat vehicula nisi viverra sit amet. Vivamus faucibus odio sit amet elit porta, sed viverra dolor laoreet. Proin ut lacinia justo, sed efficitur odio.
+        In elementum laoreet nisl, eget hendrerit felis.
+    </string>
+
+    <string name="lorem_ipsum_med">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet eros quis ullamcorper volutpat. Donec faucibus justo non nisi pharetra consequat.
+        Sed ullamcorper, nisl non cursus ultricies, ligula mauris fermentum metus, sed feugiat quam urna vel mi. Nam volutpat justo in elementum volutpat.
+        In arcu lorem, sollicitudin et lorem id, gravida condimentum justo. Integer rutrum quam a lacinia molestie. Maecenas aliquam diam sed ex pharetra dapibus.
+    </string>
+
+
+    <!--  Seccion de la info  -->
+    <string name="info_1">
+        Somos una empresa que nos importa hacer que nuestra clientela tenga la posibilidad de reiventar su calzado por modicos y accesibles precios.
+    </string>
+
+    <string name="info_2">
+        Para ello disponemos de una amplia gama de servicios aplicables que se ajustan a las necesidades que poseen nuestros clientes.
+    </string>
+    <string name="info_3">
+        Asi que no dudes más,
+        \nsomos tu mejor opción !!
+    </string>
+    <string name="address">
+        Blvd. Benjamin 4297 col ñ. Ferrocarrilera, 80180 Culiacán, Sinaloa
+    </string>
+    <string name="local_phone">667-153-1998</string>
+
+    <!--  Header_holder  -->
+    <string name="number_holder">
+        Por favor, ingrese el código de vefificacion enviado al numero %s
+    </string>
+
+</resources>

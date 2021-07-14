@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/mdl_photo_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:adjustViewBounds="true"/>
+
+   <LinearLayout
+	   android:id="@+id/mdl_photo_over_menu"
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent"
+	   android:color="#66FF0000"
+	   android:orientation="vertical"
+	   android:gravity="center"
+	   android:visibility="gone"
+	   android:background="#A8000000">
+	
+
+	<com.google.android.material.button.MaterialButton
+		android:visibility="gone"
+	    android:id="@+id/mdl_photo_btn_view"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text=""
+		android:textColor="@android:color/white"
+		app:strokeColor="@android:color/white"
+		app:strokeWidth="2dp"
+		app:icon="@drawable/ic_ver"
+		app:iconSize="24dp"
+		app:iconGravity="textStart"
+		app:iconTint="@android:color/white"
+		style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+	
+	<com.google.android.material.button.MaterialButton
+	    android:id="@+id/mdl_photo_btn_delete"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Borrar"
+		android:textColor="@android:color/white"
+		app:strokeColor="@android:color/white"
+		app:strokeWidth="2dp"
+		app:icon="@drawable/ic_delete_24"
+		app:iconGravity="textStart"
+		app:iconTint="@android:color/white"
+		style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+   </LinearLayout>
+
+</FrameLayout>

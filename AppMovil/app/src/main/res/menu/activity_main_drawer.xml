@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_sell"
+            android:icon="@drawable/ic_monetization_on_24"
+            android:title="Cotizacion" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_baseline_view_list_24"
+            android:title="Mis Pedidos" />
+
+        <item
+            android:id="@+id/nav_fire_sale"
+            android:icon="@drawable/ic_baseline_view_list_24"
+            android:title="En Remate" />
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="Acerca de Nosotros" />
+
+        <item android:title="Sesion">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_usuario_24dp"
+                    android:title="Perfil" />
+
+                <item
+                    android:id="@+id/nav_log_out"
+                    android:icon="@drawable/ic_exit_to_app_24"
+                    android:title="Cerrar Sesion" />
+            </menu>
+        </item>
+
+        <item android:title="Testing" android:visible="false">
+
+            <menu>
+
+                <item
+                    android:id="@+id/nav_reset_all"
+                    android:icon="@drawable/ic_exit_to_app_24"
+                    android:title="Resetear" />
+
+                <item
+                    android:id="@+id/nav_conv"
+                    android:icon="@drawable/ic_exit_to_app_24"
+                    android:title="Crear Conv" />
+
+            </menu>
+
+        </item>
+    </group>
+</menu>
