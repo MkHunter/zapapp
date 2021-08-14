@@ -17,6 +17,10 @@ procesamiento.
 
 ## Tecnologías utilizadas
 
+### Justificación
+
+![TechStack.png](TechStack.png)
+
 ### Frontend
 
 - React & Redux
